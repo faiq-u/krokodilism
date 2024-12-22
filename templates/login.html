@@ -1,0 +1,10 @@
+{% load static %}
+<body style='background-color:tomato;'>
+<center><h1>LOGIN</h1></center><hr>
+<form action='' method='POST'>
+    {% csrf_token %}
+    <input type='text' name='username' style='font-size:30'/><br>
+    <input type='password' name='pass' style='font-size:30'/><br>
+    <input type='submit' style='font-size:30'/>
+</form>
+</body>

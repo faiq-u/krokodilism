@@ -1,0 +1,7 @@
+{% load static %}
+
+{% for song in songs %}
+<audio controls>
+    <source src="{{song.audio.url}}">
+</audio>
+{% endfor %}
